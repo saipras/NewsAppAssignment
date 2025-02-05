@@ -68,10 +68,10 @@ cd news-app</code></pre>
 <h2>Screenshots</h2>
 
 <p><b>Home Screen</b></p>
-<img src="screenshots/mainscreen.png" alt="Home Screen" width="500" height="300">
+<img src="Screenshots/mainscreen.png" alt="Home Screen" width="500" height="300">
 
 <p><b>Article Details</b></p>
-<img src="screenshots/detailsscreen.png" alt="Article Details" width="500" height="300">
+<img src="Screenshots/detailsscreen.png" alt="Article Details" width="500" height="300">
 
 
 <h2>Future Improvements</h2>

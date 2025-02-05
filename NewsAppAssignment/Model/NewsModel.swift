@@ -28,7 +28,7 @@ struct ArticleSource: Decodable {
 }
 
 //MARK: ArticleResponse Model
-///Represents the APi response containing a list of articles.
+///Represents the API response containing a list of articles.
 struct ArticlesResponse: Decodable {
     var status: String
     var totalResults: Int

@@ -7,15 +7,26 @@
 
 import SwiftUI
 
+// MARK: - Content View
+/// Displays a list of news articles and allows navigation to detailed views.
 struct ContentView: View {
+    @StateObject var viewModel = NewsViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationView {
+            List(viewModel.articles) { article in
+                NavigationLink(destination: NewsDetailView(article: article)) {
+                    NewsCard(article: article)
+                }
+            }
+            .listStyle(.inset)
+            .navigationTitle("Latest News")
+            .task {
+                if viewModel.articles.isEmpty {
+                    viewModel.fetchNews()
+                }
+            }
         }
-        .padding()
     }
 }
 

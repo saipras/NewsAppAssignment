@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		646147C32D53655100FD2733 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 646147C22D53655100FD2733 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		646147CE2D536AEB00FD2733 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6461472A2D535E7D00FD2733 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 646147312D535E7D00FD2733;
+			remoteInfo = NewsAppAssignment;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		646147322D535E7D00FD2733 /* NewsAppAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsAppAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		646147CA2D536AEB00FD2733 /* NewsAppAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsAppAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +31,23 @@
 			path = NewsAppAssignment;
 			sourceTree = "<group>";
 		};
+		646147CB2D536AEB00FD2733 /* NewsAppAssignmentTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = NewsAppAssignmentTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6461472F2D535E7D00FD2733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				646147C32D53655100FD2733 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646147C72D536AEB00FD2733 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				646147342D535E7D00FD2733 /* NewsAppAssignment */,
+				646147CB2D536AEB00FD2733 /* NewsAppAssignmentTests */,
 				646147332D535E7D00FD2733 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				646147322D535E7D00FD2733 /* NewsAppAssignment.app */,
+				646147CA2D536AEB00FD2733 /* NewsAppAssignmentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +95,34 @@
 			);
 			name = NewsAppAssignment;
 			packageProductDependencies = (
+				646147C22D53655100FD2733 /* Kingfisher */,
 			);
 			productName = NewsAppAssignment;
 			productReference = 646147322D535E7D00FD2733 /* NewsAppAssignment.app */;
 			productType = "com.apple.product-type.application";
+		};
+		646147C92D536AEB00FD2733 /* NewsAppAssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646147D02D536AEB00FD2733 /* Build configuration list for PBXNativeTarget "NewsAppAssignmentTests" */;
+			buildPhases = (
+				646147C62D536AEB00FD2733 /* Sources */,
+				646147C72D536AEB00FD2733 /* Frameworks */,
+				646147C82D536AEB00FD2733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				646147CF2D536AEB00FD2733 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				646147CB2D536AEB00FD2733 /* NewsAppAssignmentTests */,
+			);
+			name = NewsAppAssignmentTests;
+			packageProductDependencies = (
+			);
+			productName = NewsAppAssignmentTests;
+			productReference = 646147CA2D536AEB00FD2733 /* NewsAppAssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +137,10 @@
 					646147312D535E7D00FD2733 = {
 						CreatedOnToolsVersion = 16.2;
 					};
+					646147C92D536AEB00FD2733 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 646147312D535E7D00FD2733;
+					};
 				};
 			};
 			buildConfigurationList = 6461472D2D535E7D00FD2733 /* Build configuration list for PBXProject "NewsAppAssignment" */;
@@ -94,18 +152,29 @@
 			);
 			mainGroup = 646147292D535E7D00FD2733;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				646147C12D53655100FD2733 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 646147332D535E7D00FD2733 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				646147312D535E7D00FD2733 /* NewsAppAssignment */,
+				646147C92D536AEB00FD2733 /* NewsAppAssignmentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		646147302D535E7D00FD2733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		646147C82D536AEB00FD2733 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		646147C62D536AEB00FD2733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		646147CF2D536AEB00FD2733 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 646147312D535E7D00FD2733 /* NewsAppAssignment */;
+			targetProxy = 646147CE2D536AEB00FD2733 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		6461473E2D535E7F00FD2733 /* Debug */ = {
@@ -300,6 +384,40 @@
 			};
 			name = Release;
 		};
+		646147D12D536AEB00FD2733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldnews.NewsAppAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsAppAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewsAppAssignment";
+			};
+			name = Debug;
+		};
+		646147D22D536AEB00FD2733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.worldnews.NewsAppAssignmentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewsAppAssignment.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NewsAppAssignment";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -321,7 +439,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		646147D02D536AEB00FD2733 /* Build configuration list for PBXNativeTarget "NewsAppAssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				646147D12D536AEB00FD2733 /* Debug */,
+				646147D22D536AEB00FD2733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		646147C12D53655100FD2733 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		646147C22D53655100FD2733 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 646147C12D53655100FD2733 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6461472A2D535E7D00FD2733 /* Project object */;
 }
